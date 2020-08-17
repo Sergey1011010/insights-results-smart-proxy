@@ -389,7 +389,7 @@ func (server HTTPServer) readAggregatorRuleForClusterID(
 ) (*types.RuleOnReport, bool) {
 	aggregatorURL := httputils.MakeURLToEndpoint(
 		server.ServicesConfig.AggregatorBaseEndpoint,
-		ira_server.RuleEndpoint,
+		ira_server.SingleRuleEndpoint,
 		orgID,
 		clusterID,
 		userID,
